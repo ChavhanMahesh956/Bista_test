@@ -1,0 +1,5 @@
+input = [2.6743, 3.63526, 4.2325, 5.9687967, 7.6988, 9.6907]
+
+rounded_values = list(map(lambda x: round(x), input))
+
+print("Rounded values are:",rounded_values)
