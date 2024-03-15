@@ -1,19 +1,19 @@
 def factorial(num):
     if num <= 1:
         yield 1
-    
-    for i in range(num):
-            yield (i * factorial(i - 1))
-    yield num
+    else:
+        yield num * fact1(num - 1)
 
 for i in range(5):
-    print(factorial(i))
+    if(factorial(i)):
+        print(i)
 
 # def factorial(num):
 #     if num <= 1:
 #         return 1
-#     for i in range(0, num):
-#         return i * factorial( i - 1)
-#     return i
-    
-# print(factorial(10))
+#     else:
+#         return num * factorial( num - 1)
+
+# for i in range(3):
+#     if(factorial(i)):
+#         print((i))
